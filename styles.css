@@ -17,3 +17,12 @@ canvas {
 svg {
   display: none;
 }
+
+#canvas-container {
+  position: relative;
+  display: flex;
+}
+
+#canvas-container canvas {
+  position: absolute;
+}
