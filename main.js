@@ -1,7 +1,6 @@
 import { VpypeSVG } from './lib/classes/VpypeSVG.js';
 import { Plotter } from './lib/classes/Plotter.js';
 import { canvas, canvasSize, ctx, plotCanvas } from './lib/canvas.js';
-import { distanceTo } from './lib/utils.js';
 
 // plotter instance
 const plotter = new Plotter();
@@ -44,6 +43,8 @@ async function plot() {
     // raise the pen after each path
     plotter.penUp();
   }
+
+  await plotter.moveTo(0, 0, 5000);
 }
 
 function update() {
