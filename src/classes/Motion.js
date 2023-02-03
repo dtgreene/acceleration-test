@@ -1,4 +1,4 @@
-import { distanceTo } from '../utils.js';
+import { distanceTo } from '../utils';
 
 export class MotionVertex {
   x = 0;

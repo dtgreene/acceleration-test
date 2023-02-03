@@ -1,0 +1,25 @@
+{
+  "name": "acceleration-test",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "start": "vite",
+    "build": "vite build --base https://dtgreene.github.io/acceleration-test/dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dtgreene/acceleration-test.git"
+  },
+  "keywords": [],
+  "author": "Dylan Greene",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dtgreene/acceleration-test/issues"
+  },
+  "homepage": "https://github.com/dtgreene/acceleration-test#readme",
+  "dependencies": {
+    "mainloop.js": "^1.0.4",
+    "vite": "^4.1.1"
+  }
+}

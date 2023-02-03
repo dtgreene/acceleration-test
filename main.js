@@ -1,6 +1,9 @@
-import { VpypeSVG } from './lib/classes/VpypeSVG.js';
-import { Plotter } from './lib/classes/Plotter.js';
-import { canvas, canvasSize, ctx, plotCanvas } from './lib/canvas.js';
+import MainLoop from 'mainloop.js';
+
+import { VpypeSVG } from './src/classes/VpypeSVG';
+import { Plotter } from './src/classes/Plotter';
+import { canvas, canvasSize, ctx, plotCanvas } from './src/canvas';
+import rawSVG from './src/assets/test.svg?raw';
 
 // plotter instance
 const plotter = new Plotter();
@@ -20,7 +23,7 @@ window.onload = () => {
 };
 
 async function plot() {
-  const svg = new VpypeSVG('svg-input', { width: 800, height: 800 });
+  const svg = new VpypeSVG(rawSVG, { width: 800, height: 800 });
   const paths = svg.flatten();
   // const motionPaths = paths.map((path) => new MotionPath(path));
 

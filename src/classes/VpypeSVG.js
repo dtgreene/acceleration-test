@@ -22,9 +22,10 @@ export class VpypeSVG {
     width: 0,
     height: 0,
   };
-  constructor(id, dimensions) {
+  constructor(rawSVG, dimensions) {
     try {
-      const svg = document.getElementById(id);
+      const parser = new DOMParser();
+      const svg = parser.parseFromString(rawSVG, "image/svg+xml").documentElement;
       const viewBox = svg.getAttribute('viewBox');
 
       // parse view box

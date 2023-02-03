@@ -14,10 +14,6 @@ canvas {
   box-shadow: 0 0 8px #222;
 }
 
-svg {
-  display: none;
-}
-
 #canvas-container {
   position: relative;
   display: flex;

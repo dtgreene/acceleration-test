@@ -1,5 +1,5 @@
-import { canvasSize, ctx, plotCtx } from '../canvas.js';
-import { distanceTo } from '../utils.js';
+import { canvasSize, ctx, plotCtx } from '../canvas';
+import { distanceTo } from '../utils';
 
 const stepsPerMM = 40;
 const millisPerFrame = (1 / 60) * 1000;
